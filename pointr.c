@@ -14,6 +14,6 @@ int main ()
 	funk(&i);
 
 	write(1, &i, 1);
-	printf("%d\n", i);
+	printf("i=%d\n", i);
 	return(0);
 }
