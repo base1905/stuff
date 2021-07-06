@@ -1,15 +1,15 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    cache_clean.sh                                     :+:      :+:    :+:    #
+#    cache_clean_ksemele.sh                             :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ksemele <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: arannara <arannara@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/14 18:46:59 by ksemele           #+#    #+#              #
-#    Updated: 2021/05/17 23:03:30 by arannara         ###   ########.fr        #
+#    Updated: 2021/06/21 17:32:26 by arannara         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-#!/bin/bash
+
 
 # ---------------------------- Variables of colors --------------------------- #
 red=$'\e[1;31m'
@@ -54,12 +54,12 @@ fi
 
 du -sh ~/Library/
 
-# ------------------------ Cleaning from "*42_cache*" ------------------------ #
+# # ------------------------ Cleaning from "*42_cache*" ------------------------ #
 
-if [ -z '((find ~/Library -name "*42_cache*" 2>/dev/null))' ]
-then
-    printf "${red}Cache is empty! Nothing to be done.${end}\n"
-else
-    rm -rf ~/Library/*42_cache* 2> /dev/null
-    printf "${cyn}Complite. Cache is empty!${end}\n" 2>/dev/null
-fi
+# if [ -z '((find ~/Library -name "*42_cache*" 2>/dev/null))' ]
+# then
+#     printf "${red}Cache is empty! Nothing to be done.${end}\n"
+# else
+#     rm -rf ~/Library/*42_cache* 2> /dev/null
+#     printf "${cyn}Complite. Cache is empty!${end}\n" 2>/dev/null
+# fi
